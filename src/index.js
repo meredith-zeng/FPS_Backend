@@ -1,9 +1,5 @@
 import { Router } from "itty-router";
 
-import Story from "./handler/story";
-import Stories from "./handler/stories";
-import Post from "./handler/story";
-
 const router = Router();
 
 
@@ -12,7 +8,10 @@ router.get("/orgList", async () => {
 	const orgListJSON = JSON.stringify(orgList);
 	return new Response(orgListJSON, {
 		headers: {
-			'content-type': 'text/json'
+			'content-type': 'text/json',
+			'Access-Control-Allow-Origin': '*',
+			'Access-Control-Allow-Methods': 'GET,HEAD,POST,OPTIONS',
+			'Access-Control-Max-Age': '86400',
 		},
 	})
 })
@@ -23,7 +22,10 @@ router.get("/storyList", async () => {
 
 	return new Response(storyListJSON, {
 		headers: {
-			'content-type': 'text/json'
+			'content-type': 'text/json',
+			'Access-Control-Allow-Origin': '*',
+			'Access-Control-Allow-Methods': 'GET,HEAD,POST,OPTIONS',
+			'Access-Control-Max-Age': '86400',
 		},
 	})
 })
@@ -35,7 +37,10 @@ router.get("/storyList/:title", async (request) => {
 
 	return new Response(storyJSON, {
 		headers: {
-			'content-type': 'text/json'
+			'content-type': 'text/json',
+			'Access-Control-Allow-Origin': '*',
+			'Access-Control-Allow-Methods': 'GET,HEAD,POST,OPTIONS',
+			'Access-Control-Max-Age': '86400',
 		},
 	})
 	return new Response(req);
