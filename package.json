@@ -1,0 +1,17 @@
+{
+  "name": "femaleperiodsupport",
+  "version": "0.0.0",
+  "devDependencies": {
+    "jest": "^29.4.3",
+    "wrangler": "2.1.10"
+  },
+  "private": true,
+  "scripts": {
+    "start": "wrangler dev",
+    "deploy": "wrangler publish",
+    "test": "jest"
+  },
+  "dependencies": {
+    "itty-router": "^3.0.11"
+  }
+}
