@@ -2,5 +2,7 @@ name = "femaleperiodsupport"
 main = "src/index.js"
 compatibility_date = "2023-02-18"
 kv_namespaces=[
-    { binding = "static_data", id = "cae8bc215f264d9385ad8968a1ff05f2", preview_id = "96681e28da664104975fea96cab8e57b"}
+    { binding = "static_data", id = "cae8bc215f264d9385ad8968a1ff05f2", preview_id = "96681e28da664104975fea96cab8e57b"},
+    { binding = "story", id = "7b6d7c1c2ec44b20af94382c8da9273f", preview_id = "88e7b810d1734903aca451ecab300385"}
+
 ]
