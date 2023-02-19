@@ -33,7 +33,9 @@ router.get("/storyList", async () => {
 router.get("/storyList/:title", async (request) => {
 	const authorName = request.params.title;
 	const storyRes = await story.get(authorName, {type:"json"});
+
 	const storyJSON = JSON.stringify(storyRes);
+
 
 	return new Response(storyJSON, {
 		headers: {
@@ -45,6 +47,8 @@ router.get("/storyList/:title", async (request) => {
 	})
 	return new Response(req);
 })
+
+
 
 
 router.get('/', () => new Response('Root!'))
